@@ -1,0 +1,16 @@
+{
+  "eslint.validate": [
+    "typescript",
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\.(ts)$",
+        "cmd": "yarn compile"
+      }
+    ]
+  },
+}
