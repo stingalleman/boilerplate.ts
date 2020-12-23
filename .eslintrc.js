@@ -9,5 +9,6 @@ module.exports = {
     '@tribecamp/typescript'
   ],
   rules: {
+    "no-console": "off"
   }
 };
