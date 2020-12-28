@@ -6,7 +6,10 @@ module.exports = {
   },
   extends: [
     '@tribecamp/base',
-    '@tribecamp/typescript'
+    '@tribecamp/typescript',
+    'prettier',
+    'prettier/@typescript-eslint',
+    'prettier/unicorn'
   ],
   rules: {
     "no-console": "off"
