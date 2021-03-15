@@ -5,7 +5,7 @@
   "author": "Sting Alleman <stingalleman@icloud.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon dist/",
+    "dev": "tsc-watch --project . --outDir ./dist --onSuccess \"node ./dist\"",
     "compile": "tsc -p .",
     "compile:watch": "tsc -p . -w",
     "lint": "eslint **/*.ts",
@@ -21,8 +21,8 @@
     "@typescript-eslint/parser": "^4.11.0",
     "eslint": "^7.16.0",
     "eslint-config-prettier": "^7.1.0",
-    "nodemon": "^2.0.6",
     "prettier": "^2.2.1",
+    "tsc-watch": "^4.2.9",
     "typescript": "^4.1.3"
   }
 }
